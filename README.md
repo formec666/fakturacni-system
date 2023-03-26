@@ -32,7 +32,7 @@ nastavte apache nebo nginx
 
 ## Jak používat
 
-Vlevo je výpis faktur a možnost vytvořit novou. V pravo je formulář pro data ve faktuře, včetně text area a popis. Text area zpracuje i nové řádky tekže není problém si rozepsat seznam nebo něco, jen pozor na délku, když to bude moc řádků tak se to možná nevejde na stránku nebo tak něco.
+Vlevo je výpis faktur a možnost vytvořit novou. Vpravo je formulář pro data ve faktuře, včetně text area a popis. Text area zpracuje i nové řádky tekže není problém si rozepsat seznam nebo něco, jen pozor na délku, když to bude moc řádků tak se to možná nevejde na stránku nebo tak něco.
 
 Tlačítkem uložit uložíte (kdo by to byl řekl že) a vystavit vystaví fakturu, tzn. do DB k ní napíše datum vystavení a nejde ji dál ukládat. Teda jde ale není tam na to tlačítko hehe.
 
