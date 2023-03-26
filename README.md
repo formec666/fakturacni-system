@@ -1,27 +1,41 @@
-# Next.js + Tailwind CSS Example
+# Fakturační systém
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+20 let jsme psali faktury kopírováním té samé stránky ve wordu, ale word mě nas*al, neumí zálohování ani nic takže to vždykcy bylo k ničemu. Je pravda že mám v ruce kladivo (next) takže vidím všude hřebíky (něco co by nutně potřebovalo webovou aplikaci xd) ale není kdo by mě zastavil, takže se s vámi o to rád podělím.
 
-## Deploy your own
+## Použijte taky!
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Naklonujte z githubu
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Nakonfigurujte DB v .env a schema.prisma
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+npm install
 ```
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+npx prisma db push
 ```
+
+Změňte vlastní data v /pages/print/[fid].tsx
+a přejmenujte si stránku /pages/faktury/[fid].tsx v Head
 
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+npm run dev
+```
+nebo 
+```bash
+next build
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+nastavte apache nebo nginx
+
+
+## Jak používat
+
+Vlevo je výpis faktur a možnost vytvořit novou. V pravo je formulář pro data ve faktuře, včetně text area a popis. Text area zpracuje i nové řádky tekže není problém si rozepsat seznam nebo něco, jen pozor na délku, když to bude moc řádků tak se to možná nevejde na stránku nebo tak něco.
+
+Tlačítkem uložit uložíte (kdo by to byl řekl že) a vystavit vystaví fakturu, tzn. do DB k ní napíše datum vystavení a nejde ji dál ukládat. Teda jde ale není tam na to tlačítko hehe.
+
+Po vystavení se zobrazuje pouze možnost tisk, to nás vezme na stránku kde se zobrazuje finální verze faktury, jenom trochu roztáhlá do šířky, když dáte tisknout z prohlížeče CTR + P tak vám vyjede utilitka na tisk, tam už je všechno dobře.
+
+
