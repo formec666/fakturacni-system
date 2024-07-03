@@ -47,23 +47,22 @@ export default function Print(props:{faktura:any}){
         </div>
         <div className="m-2 font-semibold text-lg border-t-2 border-stone-600 rounded-none">
         Dodavatel: 
-            <div className="text-base">Karel Mazal Montáž a oprava vyhrazených elektrických zařízení, montáž a opravy plynových spotřebičů do 50kW
-                <div className="font-normal italic"> ŽL vydal: Okresní úřad Vyškov, pod č.j. Ž/3578/01Or, ev.č. 371200-2370-01 IČO: 40478-386, nejsem plátce DPH
+            <div className="text-base">Člověk Příkladný, 22 Jump Street, NYC
+                <div className="font-normal italic"> ŽL vydal: Okresní úřad Vyškov, , nejsem plátce DPH
                 </div>
             </div>
             <div className="flex flex-row font-normal text-base pt-6 justify-between ">
                 <div>
-                    <div>IČ: 40478-386</div>
-                    <div>Ant. Zápotockého 17</div>
-                    <div>68203 Vyškov</div>
-                    <div>Mobil: 603 339 538</div>
+                    <div>
+                    ADRESA
+                    
+                    </div>
                 </div>
                 <div>
                     <div>
                         Bankovní spojení : ČSSP Vyškov
                     </div>
                     <div>
-                        Číslo účtu: 1560047389/0800
                     </div>
                 </div>
             </div>
