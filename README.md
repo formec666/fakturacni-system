@@ -1,6 +1,6 @@
 # Fakturační systém
 
-20 let jsme psali faktury kopírováním té samé stránky ve wordu, ale word mě nas*al, neumí zálohování ani nic takže to vždykcy bylo k ničemu. Je pravda že mám v ruce kladivo (next) takže vidím všude hřebíky (něco co by nutně potřebovalo webovou aplikaci xd) ale není kdo by mě zastavil, takže se s vámi o to rád podělím. Snažil jsem se vybrat barvy a tak aby to zvládl ovládat i můj postarší děda, takže to určitě zvládnete taky nebo si to upravte, má to tailwind takže ezpz.
+20 let jsme psali faktury kopírováním té samé stránky ve wordu, ale word mě nas*al, neumí zálohování ani nic takže to vždykcy bylo k ničemu. Je pravda že mám v ruce kladivo (next) takže vidím všude hřebíky (něco co by nutně potřebovalo webovou aplikaci xd) ale není kdo by mě zastavil, takže se s vámi o to rád podělím. Snažil jsem se vybrat barvy a tak aby to zvládl ovládat i můj postarší děda, takže to určitě zvládnete taky nebo si to upravte, má to tailwind takže ezpz. Nemá autentizaci protože nasazení bylo zamýšleno jenom lokálně a nějak se mi s tím nechtělo štvát
 
 ## Použijte taky!
 
